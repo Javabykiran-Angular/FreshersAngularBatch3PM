@@ -1,0 +1,17 @@
+<p>property-binding works!</p>
+
+<!-- syntax [html_attribute_name/custom_attr.]="Property_name" -->
+
+<input type="text" value="" [placeholder]="placeholderName"><br><br>
+<input type="text" [value]="name" ><br> <br>
+
+<img [src]="imgUrl" alt=""> <hr>
+
+<div hidden=" {{ishidden}} ">
+    <h2>Hide/Display data using String interpolation </h2>
+</div> <br><br>
+
+<div [hidden]="ishidden">
+    <h2>Hide/Display data using Property Binding </h2>
+</div>
+

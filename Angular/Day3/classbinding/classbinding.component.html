@@ -1,0 +1,15 @@
+<p>classbinding works!</p>
+
+<h2 [class]="myclass">Apply Class Binding </h2> 
+
+<h2 [class.danger]="rating<5"
+ [class.success]="rating>5"
+>Apply Class Binding Using Condition</h2> <hr>
+
+<!-- ngClass => Apply Multiple css classes -->
+
+<div [ngClass]="objClass">
+    <h2>Apply Multiple css Classes using ngClass</h2>
+</div>
+
+
