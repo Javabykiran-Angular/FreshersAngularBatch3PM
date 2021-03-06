@@ -1,0 +1,33 @@
+<p>event-binding works!</p>
+
+<!-- <button (click)="onClick()">Click</button> <br><br>
+
+<img src="../../assets/Desert.jpg" alt="" (click)="onImageClick()">
+<br><br>
+
+<button (click)="result=2+2">Add</button>
+{{result}}
+<hr> -->
+<!-- angular gives a special variable called as $event
+$event=> gives current dom element all information & that information is in object form -->
+<!-- <button (click)="onClick1($event)" value="Gives Information">$Event Info</button>
+<hr> -->
+<!-- template reference variable -->
+
+<!-- <input #myinput type="text" placeholder="Enter the Name...."> <br>
+<button (click)="onSend(myinput)">Send</button> <br><br>
+
+<input #myinput1 type="text" placeholder="Enter the Name...."> <br>
+<button (click)="onSend1(myinput1,myinput1.value)">Send</button> -->
+
+<input type="text" placeholder="Enter the number1" #num1 > <br><br>
+<input #num2 type="text" placeholder="Enter the number2"><br><br>
+<button (click)="OnAddition(num1.value,num2.value)">Addition</button>
+
+<input type="text" placeholder="Result is " [value]="res"> <hr>
+
+<input type="text" (change)="onChange()" placeholder="Change event...">
+<hr>
+<input type="text" (keyup)="onKeyUp()" placeholder="Press Key Up...">
+<hr>
+<input type="text" (keydown)="onKeyDown()" placeholder="Press Key down...">
